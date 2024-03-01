@@ -2,12 +2,12 @@ const navItem = [
   {
     name: "關於我們",
     enName: "About Us",
-    url: "../page/About.html",
+    url: "./About.html",
   },
-  { name: "產品介紹", enName: "Product", url: "../page/Product.html" },
-  { name: "代工服務", enName: "OEM", url: "../page/Oem.html" },
-  { name: "最新消息", enName: "News", url: "../page/News.html" },
-  { name: "聯絡我們", enName: "Contact Us", url: "../page/Contact.html" },
+  { name: "產品介紹", enName: "Product", url: "./Product.html" },
+  { name: "代工服務", enName: "OEM", url: "./Oem.html" },
+  { name: "最新消息", enName: "News", url: "./News.html" },
+  { name: "聯絡我們", enName: "Contact Us", url: "./Contact.html" },
 ];
 
 $(window).on("load", function () {
@@ -42,7 +42,7 @@ $(window).on("load", function () {
 
   const navHeight = $("#nav").outerHeight();
   const video = $(".cut-1-video video");
-  video.css("margin-top", navHeight);
+  video.css("padding-top", navHeight);
   if (window.innerWidth <= 1024) {
     $(".nav-hamb-icon").on("click", function (e) {
       e.preventDefault();
