@@ -1,0 +1,199 @@
+@import "_config";
+
+//第1cut
+.cut-1 {
+  width: 100%;
+  position: relative;
+}
+
+.cut-1-video {
+  width: 100%;
+  @include tablet {
+    overflow: hidden;
+    video {
+      width: 200%;
+      position: relative;
+      right: 50%;
+    }
+  }
+}
+
+.cut-1-para {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 4%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+  width: 100%;
+  line-height: 1.5;
+  h1 {
+    font-size: 2.25vw;
+    font-family: $sans;
+  }
+  @include tablet {
+    h1 {
+      font-size: 6vw;
+      letter-spacing: 1px;
+    }
+  }
+  @include mobile {
+    h1 {
+      font-size: 7vw;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.cut-1-para-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .cut-1-para-line {
+    background-color: white;
+    width: 5vw;
+    height: 1px;
+  }
+  p {
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: $sans;
+  }
+  @include tablet {
+    .cut-1-para-line {
+      width: 10vw;
+    }
+    p {
+      font-size: 3.5vw;
+      margin-left: 10%;
+      margin-right: 10%;
+      letter-spacing: 1px;
+    }
+  }
+  @include mobile {
+    .cut-1-para-line {
+      width: 12vw;
+    }
+    p {
+      font-size: 4.5vw;
+      margin-left: 10%;
+      margin-right: 10%;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+//第2cut
+.cut-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+  @include tablet {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10%;
+  }
+}
+.cut-2-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  z-index: 1;
+  gap: 4vw 0;
+  @include tablet {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 7vw;
+  }
+}
+.cut-2-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  width: 24vw;
+  border: 1px solid white;
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.cut-2-item-top {
+  width: 100%;
+  height: 100%;
+}
+.cut-2-item-bottom {
+  color: white;
+  font-family: $sans;
+  width: 80%;
+  margin-top: 5%;
+  .cut-2-item-time {
+    font-size: 0.8vw;
+    font-family: $sans;
+    letter-spacing: 1px;
+  }
+  .cut-2-item-line {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 3%;
+  }
+  p {
+    font-size: 1.25vw;
+    margin-top: 3%;
+    letter-spacing: 1px;
+  }
+  @include tablet {
+    .cut-2-item-time {
+      font-size: 2.25vw;
+    }
+    p {
+      font-size: 2.75vw;
+      letter-spacing: 2px;
+    }
+  }
+  @include mobile {
+    .cut-2-item-time {
+      font-size: 3.25vw;
+    }
+    p {
+      font-size: 3.75vw;
+      letter-spacing: 2px;
+    }
+  }
+}
+.cut-2-more {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 3%;
+  margin-bottom: 8%;
+  a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    line-height: 0.8;
+    font-size: 0.8vw;
+    letter-spacing: 2px;
+    gap: 0.5vw;
+  }
+  @include tablet {
+    a {
+      font-size: 2vw;
+    }
+  }
+  @include mobile {
+    a {
+      font-size: 3vw;
+    }
+  }
+}

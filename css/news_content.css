@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700&display=swap");
+.cut-1 {
+  width: 100%;
+  position: relative;
+}
+
+.cut-1-video {
+  width: 100%;
+}
+@media all and (max-width: 1024px) {
+  .cut-1-video {
+    overflow: hidden;
+  }
+  .cut-1-video video {
+    width: 200%;
+    position: relative;
+    right: 50%;
+  }
+}
+
+.cut-1-para {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 4%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+  width: 100%;
+  line-height: 1.5;
+}
+.cut-1-para h1 {
+  font-size: 2.25vw;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media all and (max-width: 1024px) {
+  .cut-1-para h1 {
+    font-size: 6vw;
+    letter-spacing: 1px;
+  }
+}
+@media all and (max-width: 500px) {
+  .cut-1-para h1 {
+    font-size: 7vw;
+    letter-spacing: 1px;
+  }
+}
+
+.cut-1-para-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cut-1-para-inner .cut-1-para-line {
+  background-color: white;
+  width: 5vw;
+  height: 1px;
+}
+.cut-1-para-inner p {
+  font-size: 1.5vw;
+  color: white;
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: "Noto Sans TC", sans-serif;
+}
+@media all and (max-width: 1024px) {
+  .cut-1-para-inner .cut-1-para-line {
+    width: 10vw;
+  }
+  .cut-1-para-inner p {
+    font-size: 3.5vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    letter-spacing: 1px;
+  }
+}
+@media all and (max-width: 500px) {
+  .cut-1-para-inner .cut-1-para-line {
+    width: 12vw;
+  }
+  .cut-1-para-inner p {
+    font-size: 4.5vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    letter-spacing: 1px;
+  }
+}
+
+.cut-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cut-2-item {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media all and (max-width: 1024px) {
+  .cut-2-item {
+    width: 80%;
+  }
+}
+
+.cut-2-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+}
+@media all and (max-width: 1024px) {
+  .cut-2-title {
+    margin-top: 10%;
+  }
+}
+
+.cut-2-title-container {
+  color: white;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cut-2-title-container span {
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 1px;
+}
+.cut-2-title-container .cut-2-title-span-1 {
+  font-size: 1.25vw;
+}
+.cut-2-title-container .cut-2-title-span-2 {
+  font-size: 1vw;
+}
+@media all and (max-width: 1024px) {
+  .cut-2-title-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  .cut-2-title-container .cut-2-title-span-1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  .cut-2-title-container .cut-2-title-span-2 {
+    font-size: 3.5vw;
+    margin-bottom: 5%;
+  }
+}
+@media all and (max-width: 500px) {
+  .cut-2-title-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+  }
+  .cut-2-title-container .cut-2-title-span-1 {
+    font-size: 6vw;
+    text-align: center;
+  }
+  .cut-2-title-container .cut-2-title-span-2 {
+    font-size: 4.5vw;
+    margin-bottom: 5%;
+  }
+}
+
+.cut-2-pic {
+  width: 100%;
+}
+
+.cut-2-para {
+  width: 100%;
+  margin-top: 5%;
+}
+.cut-2-para p {
+  line-height: 2;
+  letter-spacing: 2px;
+  font-size: 0.8vw;
+  font-family: "Microsoft JhengHei";
+  color: white;
+}
+@media all and (max-width: 1024px) {
+  .cut-2-para {
+    margin-top: 7%;
+  }
+  .cut-2-para p {
+    font-size: 2.2vw;
+    line-height: 1.75;
+    word-break: break-all;
+  }
+}
+@media all and (max-width: 500px) {
+  .cut-2-para {
+    margin-top: 7%;
+  }
+  .cut-2-para p {
+    font-size: 3.2vw;
+    line-height: 1.75;
+    word-break: break-all;
+  }
+}
+
+.cut-2-back-href {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  gap: 0.5vw;
+  margin-top: 3vw;
+}
+.cut-2-back-href img {
+  width: 1vw;
+}
+.cut-2-back-href span {
+  font-size: 0.9vw;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+}
+@media all and (max-width: 1024px) {
+  .cut-2-back-href {
+    gap: 1.5vw;
+  }
+  .cut-2-back-href img {
+    width: 3vw;
+  }
+  .cut-2-back-href span {
+    font-size: 2.2vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .cut-2-back-href {
+    gap: 1.5vw;
+  }
+  .cut-2-back-href img {
+    width: 4vw;
+  }
+  .cut-2-back-href span {
+    font-size: 3.2vw;
+  }
+}
+
+.bottom-button-product-ph {
+  display: none;
+}
+@media all and (max-width: 1024px) {
+  .bottom-button-product-ph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+  }
+  .bottom-button-product-ph .bottom-button-product-ph-container {
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .bottom-button-product-ph .bottom-button-product-ph-container img {
+    cursor: pointer;
+    width: 10vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .bottom-button-product-ph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+  }
+  .bottom-button-product-ph .bottom-button-product-ph-container {
+    width: 85%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .bottom-button-product-ph .bottom-button-product-ph-container img {
+    cursor: pointer;
+    width: 17vw;
+  }
+}/*# sourceMappingURL=news_content.css.map */

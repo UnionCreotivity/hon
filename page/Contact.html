@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+    <title>聯絡我們</title>
+  </head>
+  <body>
+    <nav id="nav"></nav>
+    <main id="contact">
+      <section class="cut-1">
+        <div class="cut-1-video">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            src="../video/gear-flat.mp4"
+          ></video>
+        </div>
+        <div class="cut-1-para">
+          <h1>Contact Us.</h1>
+          <div class="cut-1-para-inner">
+            <span class="cut-1-para-line"></span>
+            <p>聯絡我們</p>
+            <span class="cut-1-para-line"></span>
+          </div>
+        </div>
+      </section>
+      <section class="cut-2">
+        <div class="cut-2-container">
+          <div class="cut-2-left">
+            <div class="cut-2-left-top">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7232.207225392218!2d121.363164!3d24.996595!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681dd05348ae3f%3A0xc8e221212a72536c!2zMzMz5qGD5ZyS5biC6b6c5bGx5Y2A6Iy25bCI5LiA6KGXMTI06Jmf!5e0!3m2!1szh-TW!2stw!4v1709274320325!5m2!1szh-TW!2stw"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="cut-2-left-bottom">
+              <p>公司地址: 桃園市龜山區茶專一街124號</p>
+              <p>公司電話: 03-329-2355</p>
+              <p>公司傳真: 03-329-5082</p>
+              <p>電子信箱: sunred3292355@hotmail.com</p>
+            </div>
+          </div>
+          <div class="cut-2-right">
+            <div class="cut-2-right-top">
+              歡迎透過左側的聯絡方式與我們聯絡~我們將於上班時間主動回覆給您。
+              若您於 24 時內仍未收到我們的回覆，麻煩您再次跟我們聯絡。
+            </div>
+            <form class="cut-2-right-bottom" id="form-main">
+              <div class="form-item">
+                <div class="form-item-content">
+                  <label for="ca_name">姓名:</label>
+                  <input type="text" id="ca_name" name="name" />
+                </div>
+                <div class="form-line"></div>
+              </div>
+              <div class="form-item">
+                <div class="form-item-content">
+                  <label for="ca_phone">電話:</label>
+                  <input type="tel" id="ca_phone" name="phone" />
+                </div>
+                <div class="form-line"></div>
+              </div>
+              <div class="form-item">
+                <div class="form-item-content">
+                  <label for="ca_mail">電子信箱:</label>
+                  <input type="email" id="ca_mail" name="email" />
+                </div>
+                <div class="form-line"></div>
+              </div>
+              <div class="form-item">
+                <div class="form-item-content">
+                  <label for="ca_comment">留言:</label>
+                  <textarea id="ca_comment" name="comment"></textarea>
+                </div>
+                <div class="form-line"></div>
+              </div>
+              <button>送出</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <span>Copyright © 2024日紅實業有限公司 版權所有</span
+      ><span>地址 ｜ 333桃園市龜山區茶專一街124號</span
+      ><span>TEL | (03)-329-2355</span>
+    </footer>
+    <script src="../js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".bottom-button img").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+        $("#form-main")
+          .submit(function (e) {
+            e.preventDefault();
+          })
+          .validate({
+            rules: {
+              name: {
+                pattern: /^[^\d!@#$%^&*()_+={}\[\]:;<>,.?~\\]+$/,
+                required: true,
+                minlength: 1,
+                maxlength: 50,
+              },
+              phone: {
+                required: true,
+                pattern: /^[0-9\+\-\#]*$/,
+                maxlength: 20,
+              },
+              comment: {
+                maxlength: 500,
+              },
+            },
+            messages: {
+              name: {
+                required: "必填",
+                maxlength: "請勿超過50個字元",
+              },
+              phone: {
+                required: "必填",
+                pattern: "請輸入正確的電話號碼",
+                maxlength: "請勿超過20個字元",
+              },
+              email: "請輸入正確的電子信箱",
+              comment: {
+                maxlength: "請勿超過500個字元",
+              },
+            },
+            errorPlacement: function (err, el) {
+              el.parent(".form-item-content").after(err);
+            },
+            submitHandler: function (form) {
+              return false;
+            },
+          });
+        $("#form-main input[name='phone']").on("keyup", function () {
+          $(this).valid();
+        });
+      });
+    </script>
+  </body>
+</html>

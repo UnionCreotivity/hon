@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <title>日紅實業股份有限公司</title>
+  </head>
+  <body>
+    <nav id="nav"></nav>
+    <main id="about">
+      <section class="cut-1">
+        <div class="cut-1-video">
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            src="../video/gear-flat.mp4"
+          ></video>
+        </div>
+        <div class="cut-1-para">
+          <h1>About Us.</h1>
+          <div class="cut-1-para-inner">
+            <span class="cut-1-para-line"></span>
+            <p>關於我們</p>
+            <span class="cut-1-para-line"></span>
+          </div>
+        </div>
+      </section>
+      <section class="cut-2">
+        <div class="cut-2-item">
+          <div class="cut-2-item-inner">
+            <div class="cut-2-item-inner-left">
+              <img src="../img/about/about-pic-1.webp" alt="about-pic-1" />
+            </div>
+            <div class="cut-2-item-inner-right">
+              <div class="cut-2-item-inner-right-top">
+                <h3>關於日紅實業</h3>
+                <div class="cut-2-item-inner-right-top-line"></div>
+              </div>
+              <p>
+                日紅實業股份有限公司，自1988年創立以來，一直以在布料刷、梳、剪、搖的加工領域擁有豐富經驗而聞名於業界。在布料搖粒加工的過程中，傳統的方式需要大量的人力參與，並且容易面臨布疋髒汙的問題，這些都是制約生產效率和品質提升的挑戰。
+              </p>
+            </div>
+          </div>
+          <div class="cut-2-item-inner">
+            <div class="cut-2-item-inner-left">
+              <img src="../img/about/about-pic-2.webp" alt="about-pic-2" />
+            </div>
+            <div class="cut-2-item-inner-right">
+              <p>
+                為了解決這些問題，我們積極投入研發，成功推出了連續式搖粒機，這一創新技術旨在降低生產成本並同時提升產品品質。連續式搖粒機的應用不僅減輕了對人力的需求，還有效解決了布料髒汙的困擾，使得整個加工流程更加高效、清潔。
+                <br />
+                <br />
+                我們堅信這一技術創新將為布料加工業帶來顯著的進步，為客戶提供更優質、高效的服務。日紅實業股份有限公司致力於持續創新，不斷提升生產工藝，以滿足客戶不斷變化的需求，保持在行業中的領先地位。
+              </p>
+            </div>
+          </div>
+          <div class="cut-2-item-inner">
+            <div class="cut-2-item-inner-left">
+              <picture>
+                <source
+                  media="(max-width:1024px)"
+                  srcset="../img/about/about-pic-3-phone.webp" />
+                <img src="../img/about/about-pic-3.webp" alt="about-pic-3"
+              /></picture>
+            </div>
+            <div class="cut-2-item-inner-right">
+              <div class="cut-2-item-inner-right-top">
+                <h3>日紅實業獨家專利</h3>
+                <div class="cut-2-item-inner-right-top-line"></div>
+              </div>
+              <p>
+                日紅實業引以為傲的獨家專利技術，為布料加工帶來了革命性的改變。這項技術解決了傳統加工中的人力成本和布料髒汙問題，同時提高了生產效率和降低了能源消耗。我們致力於持續創新，為客戶提供更多高效、環保的解決方案，以滿足不斷擴大的市場需求。日紅實業將繼續引領行業發展，成為客戶最值得信賴的合作夥伴。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="bottom-button">
+        <div class="bottom-button-product-ph-container">
+          <img src="../img/share/top-button.svg" alt="top-button" />
+        </div>
+      </div>
+    </main>
+    <footer id="footer">
+      <span>Copyright © 2024日紅實業有限公司 版權所有</span
+      ><span>地址 ｜ 333桃園市龜山區茶專一街124號</span
+      ><span>TEL | (03)-329-2355</span>
+    </footer>
+    <script src="../js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".bottom-button img").click(function () {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

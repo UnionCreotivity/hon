@@ -1,0 +1,271 @@
+@import "_config";
+
+//第1cut
+.cut-1 {
+  width: 100%;
+  position: relative;
+}
+
+.cut-1-video {
+  width: 100%;
+
+  @include tablet {
+    overflow: hidden;
+    video {
+      width: 200%;
+      position: relative;
+      right: 50%;
+    }
+  }
+}
+
+.cut-1-para {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 4%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: white;
+  width: 100%;
+  line-height: 1.5;
+  h1 {
+    font-size: 2.25vw;
+    font-family: $sans;
+  }
+  @include tablet {
+    h1 {
+      font-size: 6vw;
+      letter-spacing: 1px;
+    }
+  }
+  @include mobile {
+    h1 {
+      font-size: 7vw;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.cut-1-para-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  .cut-1-para-line {
+    background-color: white;
+    width: 5vw;
+    height: 1px;
+  }
+  p {
+    font-size: 1.5vw;
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: $sans;
+  }
+  @include tablet {
+    .cut-1-para-line {
+      width: 10vw;
+    }
+    p {
+      font-size: 3.5vw;
+      margin-left: 10%;
+      margin-right: 10%;
+      letter-spacing: 1px;
+    }
+  }
+  @include mobile {
+    .cut-1-para-line {
+      width: 12vw;
+    }
+    p {
+      font-size: 4.5vw;
+      margin-left: 10%;
+      margin-right: 10%;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+//第2cut
+.cut-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cut-2-item {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @include tablet {
+    width: 80%;
+  }
+}
+
+.cut-2-title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  @include tablet {
+    margin-top: 10%;
+  }
+}
+
+.cut-2-title-container {
+  color: white;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  span {
+    font-family: $sans;
+    letter-spacing: 1px;
+  }
+  .cut-2-title-span-1 {
+    font-size: $pcSmallTitle;
+  }
+  .cut-2-title-span-2 {
+    font-size: 1vw;
+  }
+  @include tablet {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    .cut-2-title-span-1 {
+      font-size: 5vw;
+      text-align: center;
+    }
+    .cut-2-title-span-2 {
+      font-size: 3.5vw;
+      margin-bottom: 5%;
+    }
+  }
+  @include mobile {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 100%;
+    .cut-2-title-span-1 {
+      font-size: 6vw;
+      text-align: center;
+    }
+    .cut-2-title-span-2 {
+      font-size: 4.5vw;
+      margin-bottom: 5%;
+    }
+  }
+}
+
+.cut-2-pic {
+  width: 100%;
+}
+
+.cut-2-para {
+  width: 100%;
+  margin-top: 5%;
+  p {
+    line-height: 2;
+    letter-spacing: 2px;
+    font-size: $pcSmallPara;
+    font-family: $micro;
+    color: white;
+  }
+  @include tablet {
+    margin-top: 7%;
+    p {
+      font-size: $tbPara;
+      line-height: 1.75;
+      word-break: break-all;
+    }
+  }
+  @include mobile {
+    margin-top: 7%;
+    p {
+      font-size: $phPara;
+      line-height: 1.75;
+      word-break: break-all;
+    }
+  }
+}
+
+.cut-2-back-href {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  gap: 0.5vw;
+  margin-top: 3vw;
+  img {
+    width: 1vw;
+  }
+  span {
+    font-size: 0.9vw;
+    font-family: $sans;
+    letter-spacing: 2px;
+  }
+  @include tablet {
+    gap: 1.5vw;
+    img {
+      width: 3vw;
+    }
+    span {
+      font-size: $tbPara;
+    }
+  }
+  @include mobile {
+    gap: 1.5vw;
+    img {
+      width: 4vw;
+    }
+    span {
+      font-size: $phPara;
+    }
+  }
+}
+
+.bottom-button-product-ph {
+  display: none;
+  @include tablet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    .bottom-button-product-ph-container {
+      width: 85%;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        cursor: pointer;
+        width: 10vw;
+      }
+    }
+  }
+  @include mobile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+    .bottom-button-product-ph-container {
+      width: 85%;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        cursor: pointer;
+        width: 17vw;
+      }
+    }
+  }
+}

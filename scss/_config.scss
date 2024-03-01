@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;300;400;500;600;700;800&display=swap"); //黑體
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700&display=swap"); //明體
+
+@mixin laptop() {
+  @media all and (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media all and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media all and (max-width: 500px) {
+    @content;
+  }
+}
+
+//顏色
+$fixedColor: #4c0404;
+$bgColor: #1a1a1a;
+
+//字型
+$sans: "Noto Sans TC", sans-serif; //黑體
+$serif: "Noto Serif TC", serif; //明體
+$micro: "Microsoft JhengHei"; //微軟正黑體
+
+//文字大小
+//pc
+$pcSmallTitle: 1.25vw;
+$pcSmallPara: 0.8vw;
+
+//tablet
+$tbTitle: 6vw;
+$tbPara: 2.2vw;
+
+//ph
+$phTitle: 7vw;
+$phPara: 3.2vw;

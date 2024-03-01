@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.42 80.42">
+  <g id="_物件" data-name="物件">
+    <g>
+      <circle cx="40.21" cy="40.21" r="40.21" fill="#720000"/>
+      <g>
+        <text transform="translate(24.95 65.05)" fill="#fff" font-family="NotoSansTC-Regular-90ms-RKSJ-H, &apos;Noto Sans TC&apos;" font-size="14"><tspan x="0" y="0" letter-spacing=".05em">T</tspan><tspan x="9.06" y="0" letter-spacing=".08em">OP</tspan></text>
+        <polyline points="40.13 45.71 40.13 22.39 36.29 27.97" fill="none" stroke="#fff" stroke-linejoin="round"/>
+        <line x1="40.13" y1="22.39" x2="43.96" y2="27.97" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+        <line x1="26.13" y1="19.21" x2="53.13" y2="19.21" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width=".75"/>
+      </g>
+    </g>
+  </g>
+</svg>
