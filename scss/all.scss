@@ -318,24 +318,25 @@ body {
   }
 }
 .box-img {
+  width: 5vw;
   @include tablet {
-    width: 25vw;
+    width: 15vw;
   }
   @include mobile {
-    width: 40vw;
+    width: 20vw;
   }
 }
 .box-para {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.25vw;
+  font-size: 1.25vw;
   letter-spacing: 2px;
   color: white;
   @include tablet {
-    font-size: 6vw;
+    font-size: 4vw;
   }
   @include mobile {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 }
