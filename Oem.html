@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/all.css" />
-    <!-- <link rel="stylesheet" href="./css/oem.css" /> -->
     <title>日紅實業股份有限公司</title>
   </head>
   <body>
@@ -59,7 +58,9 @@
       </section>
     </main>
     <footer id="footer">
-      <span>Copyright © 2024日紅實業有限公司 版權所有</span
+      <span
+        >Copyright © <span class="year">2024</span>日紅實業有限公司
+        版權所有</span
       ><span>地址 ｜ 333桃園市龜山區茶專一街124號</span
       ><span>TEL | (03)-329-2355</span>
     </footer>
@@ -67,6 +68,9 @@
     <script src="./js/nav.js"></script>
     <script>
       $(window).on("load", function () {
+        const d = new Date();
+        const nowYear = d.getFullYear();
+        $(".year").text(nowYear);
         $(".bottom-button img").click(function () {
           $("html, body").animate({ scrollTop: 0 }, "slow");
           return false;
