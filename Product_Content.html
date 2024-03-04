@@ -7,6 +7,17 @@
     <title>日紅實業股份有限公司</title>
   </head>
   <body>
+    <div class="loading-page">
+      <div class="box">
+        <div class="box-img">
+          <img src="./img/share/hon-logo.svg" alt="logo01" />
+        </div>
+        <div class="box-para">
+          <div class="loading-progress">0</div>
+          <span>%</span>
+        </div>
+      </div>
+    </div>
     <nav id="nav"></nav>
     <main id="product_content">
       <section class="cut-1">
@@ -77,6 +88,8 @@
       ><span>TEL | (03)-329-2355</span>
     </footer>
     <script src="./js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/loading.js"></script>
     <script src="./js/nav.js"></script>
     <script>
       $(window).on("load", function () {
