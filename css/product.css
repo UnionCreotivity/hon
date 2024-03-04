@@ -142,7 +142,7 @@
     align-items: flex-end;
   }
   #product .cut-2-item-bottom h4 {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #product .cut-2-item-bottom-1 {
@@ -173,7 +173,7 @@
 }
 @media all and (max-width: 500px) {
   #product .cut-2-item-bottom-trans {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
   }
 }
 #product .cut-2-item-bottom-2 {
@@ -202,7 +202,7 @@
 @media all and (max-width: 500px) {
   #product .cut-2-item-bottom-2 a {
     width: 15vw;
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #product .left-arrow {

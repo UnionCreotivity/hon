@@ -163,12 +163,13 @@
     width: 100%;
   }
   #oem .cut-2-item-inner-right p {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     line-height: 1.75;
   }
 }
 #oem .cut-2-item-inner-right-top h3 {
   font-size: 1.25vw;
+  font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 2px;
 }
 #oem .cut-2-item-inner-right-top .cut-2-item-inner-right-top-line {
@@ -201,7 +202,7 @@
     flex-direction: column;
   }
   #oem .cut-2-item-inner-right-top h3 {
-    font-size: 7vw;
+    font-size: 6.4vw;
     text-align: center;
   }
   #oem .cut-2-item-inner-right-top .cut-2-item-inner-right-top-line {

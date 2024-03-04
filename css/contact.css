@@ -168,10 +168,10 @@
     margin-top: 8%;
   }
   #contact .cut-2-left-bottom p {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
   #contact .cut-2-left-bottom a {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #contact .cut-2-right {
@@ -201,7 +201,7 @@
 }
 @media all and (max-width: 500px) {
   #contact .cut-2-right-top {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #contact .cut-2-right-bottom {
@@ -266,17 +266,17 @@
 }
 @media all and (max-width: 500px) {
   #contact .cut-2-right-bottom label {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
   #contact .cut-2-right-bottom input {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
   #contact .cut-2-right-bottom textarea {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     height: 10vw;
   }
   #contact .cut-2-right-bottom button {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     border-radius: 7px;
     padding: 1.5vw 6vw;
     margin-top: 10%;

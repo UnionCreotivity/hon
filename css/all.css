@@ -504,12 +504,14 @@
     width: 100%;
   }
   #about .cut-2-item-inner-right p {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     line-height: 1.75;
   }
 }
 #about .cut-2-item-inner-right-top h3 {
   font-size: 1.25vw;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 #about .cut-2-item-inner-right-top .cut-2-item-inner-right-top-line {
@@ -542,7 +544,7 @@
     flex-direction: column;
   }
   #about .cut-2-item-inner-right-top h3 {
-    font-size: 7vw;
+    font-size: 6.4vw;
     text-align: center;
   }
   #about .cut-2-item-inner-right-top .cut-2-item-inner-right-top-line {
@@ -692,7 +694,7 @@
     align-items: flex-end;
   }
   #product .cut-2-item-bottom h4 {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #product .cut-2-item-bottom-1 {
@@ -723,7 +725,7 @@
 }
 @media all and (max-width: 500px) {
   #product .cut-2-item-bottom-trans {
-    font-size: 2.8vw;
+    font-size: 3.2vw;
   }
 }
 #product .cut-2-item-bottom-2 {
@@ -752,7 +754,7 @@
 @media all and (max-width: 500px) {
   #product .cut-2-item-bottom-2 a {
     width: 15vw;
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #product .left-arrow {
@@ -899,7 +901,7 @@
 }
 @media all and (max-width: 500px) {
   #product_content .cut-2-item-para-1 {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #product_content .cut-2-item-para-2 {
@@ -964,7 +966,7 @@
     width: 4vw;
   }
   #product_content .cut-2-back-href span {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #product_content .bottom-button-product-pc {
@@ -1416,7 +1418,7 @@
     margin-top: 7%;
   }
   #news_content .cut-2-para p {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     line-height: 1.75;
     word-break: break-all;
   }
@@ -1458,7 +1460,7 @@
     width: 4vw;
   }
   #news_content .cut-2-back-href span {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #news_content .bottom-button-product-ph {
@@ -1664,7 +1666,7 @@
     width: 100%;
   }
   #oem .cut-2-item-inner-right p {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     line-height: 1.75;
   }
 }
@@ -1702,7 +1704,7 @@
     flex-direction: column;
   }
   #oem .cut-2-item-inner-right-top h3 {
-    font-size: 7vw;
+    font-size: 6.4vw;
     text-align: center;
   }
   #oem .cut-2-item-inner-right-top .cut-2-item-inner-right-top-line {
@@ -1878,10 +1880,10 @@
     margin-top: 8%;
   }
   #contact .cut-2-left-bottom p {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
   #contact .cut-2-left-bottom a {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #contact .cut-2-right {
@@ -1911,7 +1913,7 @@
 }
 @media all and (max-width: 500px) {
   #contact .cut-2-right-top {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 #contact .cut-2-right-bottom {
@@ -1976,17 +1978,17 @@
 }
 @media all and (max-width: 500px) {
   #contact .cut-2-right-bottom label {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
   #contact .cut-2-right-bottom input {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
   #contact .cut-2-right-bottom textarea {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     height: 10vw;
   }
   #contact .cut-2-right-bottom button {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     border-radius: 7px;
     padding: 1.5vw 6vw;
     margin-top: 10%;
@@ -2159,7 +2161,7 @@ body {
     padding: 25px;
   }
   .nav-right-item span {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
     margin-right: 0%;
     padding-left: 4.5%;
     padding-right: 4.5%;
@@ -2187,7 +2189,7 @@ body {
 }
 @media all and (max-width: 500px) {
   .nav-text-top {
-    font-size: 3.2vw;
+    font-size: 3.8vw;
   }
 }
 
@@ -2201,7 +2203,7 @@ body {
 }
 @media all and (max-width: 500px) {
   .nav-text-bottom {
-    font-size: 3vw;
+    font-size: 3.2vw;
   }
 }
 
