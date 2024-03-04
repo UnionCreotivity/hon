@@ -1,4 +1,12 @@
 @import "_config";
+@import "index";
+@import "about";
+@import "product";
+@import "product_content";
+@import "news";
+@import "news_content";
+@import "oem";
+@import "contact";
 
 *,
 ::after,
@@ -269,7 +277,7 @@ body {
       justify-content: flex-end;
       img {
         cursor: pointer;
-        width: 17vw;
+        width: 12vw;
       }
     }
   }

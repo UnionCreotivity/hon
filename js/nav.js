@@ -17,7 +17,7 @@ $(window).on("load", function () {
   
   <div class="nav-left">
            <a href="index.html">
-            <img src="../img/home/header-icon.png" alt="header-icon"/>
+            <img src="./img/home/header-icon.png" alt="header-icon"/>
            </a>
           </div>`;
   src += `<button class="nav-hamb-icon">
