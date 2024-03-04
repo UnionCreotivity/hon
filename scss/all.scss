@@ -220,6 +220,9 @@ body {
     text-decoration: none;
     pointer-events: none;
   }
+  .year {
+    margin-right: 0;
+  }
   @include tablet {
     flex-direction: column;
     font-size: 2vw;
